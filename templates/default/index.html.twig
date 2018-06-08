@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+    <div class="background" >
+        <div class="container-image2">
+            <div class="row">
+                {{ vievPrepare | raw }}
+                </div>
+            <div class="row2">
+                <br>
+                </div>
+            </div>
+        </div>
+    <script src="assets/animation.js"></script>
+    <div class="footer">
+        <div class="py-5 bg-primary">
+            <div class="container">
+                <div class="row3">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="form-group"> <label for="InputEmail1">Zapisz się na newsletter</label>
+                                <input type="email" class="form-control" id="InputEmail1" placeholder="Enter email"> </div>
+                            <button type="submit" class="btn btn-secondary">Wyślij</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Skontaktuj się z nami</h2>
+                        <h3>
+                            <p>Retail Technology Consulting Sp. z o.o.</p>
+                        </h3>
+                        <p>ul. Chrobrego 31/82, 40-881 Katowice</p>
+                        <p>email: biuro(at)rtcgroup.pl</p>
+                        <p>Adres biura w Krakowie: Regus Kraków Fronton
+                            <br> ul. Kamienna 21, &nbsp;31-403 Kraków </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+    <div class="background" >
+        <div class="container-image2">
+            <div class="row">
+                <!--Platforma QLIK BI-->
+                {{ vievPrepare | raw }}
+                <script src="assets//animation.js"></script>
+
+                <br>
+            </div>
+            <div class="row2">
+                <!--Wdrażamy systemy BI  QLIK  światowego lidera analityki biznesowej-->                  </div>
+            </div>
+        </div>
+<div class="container2"><br>
+    <div class="subcontent-it">
+        <div class="subtitle-it">Zalety QLIK BI
+        </div>
+        <br>
+        <p >Business Intelligence to systemy analityczne, służące do gromadzenia, segregacji, oraz weryfikacji wszystkich przepływających przez firmę danych. Pozyskane w ten sposób informacje umożliwiają dokładną analizę i precyzyjne określenie kondycji przedsiębiorstwa. QlikSense to nowoczesna platforma analityczna. Służy do samodzielnego przeprowadzania zaawansowanych analiz biznesowych w następujących obszarach: finanse, sprzedaż, marketing, logistyka zamówienia. Dzięki zastosowaniu Qlik Sense możemy podejmować szybsze i trafniejsze decyzje oraz można tworzyć skomplikowane, a zarazem bardzo czytelne kokpity menadżerskie. Qlik Sense wyróżnia się tym, że umożliwia tworzenie szybkich wizualizacji analiz i raportów biznesowych bez ograniczeń dotyczących ilości danych. Korzystanie z systemu jest proste i nie wymaga długiego okresu wdrożenia.
+
+            <br></p>
+    </div>
+    <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+    </div>
+    <div class="photo-comarch" ><div class="centred"><img src="assets/automotiveprzyklad.png" class="image" id="myImg3"> </div></div>
+    <div class="photo-comarch" ><div class="centred"><img src="assets/bankowoscprzyklad.png" class="image" id="myImg4"> </div></div>
+    <br>
+    <script src="assets//qlikJS.js"></script>
+
+    {% endblock %}

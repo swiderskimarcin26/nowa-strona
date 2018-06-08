@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+    <div class="background" >
+        <div class="container-image2">
+            <div class="row">
+                <!--Zapraszamy do kontaktu-->
+                {{ vievPrepare | raw }}
+                <script src="assets//animation.js"></script>
+            </div>
+            <div class="row2">
+                </div>
+            </div>
+        </div>
+    <div class="footer">
+        <div class="py-5 bg-primary">
+            <div class="container">
+                <div class="row3">
+                    <div class="col-md-6">
+                        <div id="map"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Skontaktuj się z nami</h2>
+                        <h3>
+                            <p>Retail Technology Consulting Sp. z o.o.</p>
+                        </h3>
+                        <p>ul. Chrobrego 31/82, 40-881 Katowice</p>
+                        <p>email: biuro(at)rtcgroup.pl</p>
+                        <p>Adres biura w Krakowie: Regus Kraków Fronton
+                            <br> ul. Kamienna 21, &nbsp;31-403 Kraków </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+            height: 500px;
+            width: 500px;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 50.270237, lng: 18.997475},
+                zoom: 13
+            });
+            var marker = new google.maps.Marker({
+                position: {lat: 50.270237, lng: 18.997475},
+                map: map,
+                title: 'Hello World!'
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYB4yacQI2raHeDLfKIfgyK-pafChRWas&callback=initMap"
+            async defer></script>
+
+{% endblock %}

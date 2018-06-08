@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+    <div class="background" >
+        <div class="container-image2">
+            <div class="row">
+                <!--Comarch ERP-->
+                {{ vievPrepare | raw }}
+            </div>
+            <div class="row2">
+                <!--Wdrażamy systemy Comarch Optima i Comarch XL w zależności od złożoności projektu i określonych wymagań funkcjonalnych-->
+                <script src="assets/animation.js"></script>
+
+            </div>
+            </div>
+        </div>
+    <div class="container2"><br>
+        <div class="subcontent">
+            <div class="subtitle">Comarch Optima</div>
+            <p >Comarch ERP Optima to najpopularniejszy w Polsce program stworzony dla małych i średnich firm z każdej branży. Dzięki wbudowanym rozwiązaniom jest najchętniej wybieranym oprogramowaniem wśród biur rachunkowych i doradców podatkowych. Z Comarch
+                Optima korzysta ponad 60 000 Klientów.<br></p>
+        </div>
+        <div id="myModal" class="modal">
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+        </div>
+        <div class="photo-comarch" ><div class="centred"><img src="assets/comarchoptima.png" class="image" id="myImg5"> </div></div>
+    </div>
+    <br>
+    <div class="container2"><br>
+        <div class="photo-comarch" ><div class="centred"><img src="assets/comarchxl.png" class="image" id="myImg6"> </div></div>
+        <div class="subcontent">
+            <div class="subtitle">Comarch XL</div>
+            <p >
+                Comarch ERP XL to zintegrowany system do zarządzania przedsiębiorstwem – najchętniej kupowany system klasy ERP w Polsce, z którego korzysta obecnie ponad 5000 przedsiębiorstw.&nbsp;
+                <br>Świadczymy usługi wsparcia Klientom posiadającym wdrożone systemy Comarch XL.            </p>
+        </div>
+    </div>
+    <script src="assets//comarchJS.js"></script>
+
+{% endblock %}
