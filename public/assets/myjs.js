@@ -1,20 +1,24 @@
-function do_this(){
 
-        var checkboxes = document.getElementsByName('approve[]');
-        var button = document.getElementById('allcounty');
-
-        if(button.value == 'select'){
-            for (var i in checkboxes){
-                checkboxes[i].checked = 'FALSE';
-            }
-            button.value = 'deselect'
-        }else{
-            for (var i in checkboxes){
-                checkboxes[i].checked = '';
-            }
-            button.value = 'select';
+$('#send').click(function() {
+    var data=$('#emailForm :input').serializeArray();
+    $.ajax({
+        url: $('#emailForm').attr('action'),
+        type: 'POST',
+        data: data,
+        success: function(){
+            alert('dodano adres email');
+        },
+        error: function(response){
+            alert('błąd podczas dodawania adresu email');
         }
-    }
+    });
+
+    $('#emailForm').submit( function(){ return false;})
+
+});
+
+
+
 //function mysql_query(query, args=null){
 //    var json=null;
 //    

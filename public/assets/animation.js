@@ -1,4 +1,4 @@
-$animation1=window.addEventListener  = anime({
+window.onload  = anime({
     targets: 'div.letter',
     // translateY: [
     //     { value: 200, duration: 500 },
@@ -12,10 +12,10 @@ $animation1=window.addEventListener  = anime({
         easing: 'easeInOutSine'
     },
 
-delay: function(el, i, l){ return 500+i *60}
+    delay: function(el, i, l){ return 500+i *60}
 });
 
-$animation1.addEventListener("load", anime({
+window.onload  = anime({
     targets: 'div.letter1',
     // translateY: [
     //     { value: 200, duration: 500 },
@@ -29,4 +29,5 @@ $animation1.addEventListener("load", anime({
         easing: 'easeInOutSine'
     },
     delay: function(el, i, l){ return 3000+i *30}
-}));
+});
+
