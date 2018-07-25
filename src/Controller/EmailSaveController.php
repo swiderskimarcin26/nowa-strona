@@ -23,10 +23,6 @@ class EmailSaveController extends Controller
         $saveEmailService= new saveEmailService($email,$entityMenager);
         $saveEmailService->saveEmail();
 
-
         return  new JsonResponse(["name"=>$email]);
-;
-
     }
-
 }

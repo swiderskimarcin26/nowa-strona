@@ -16,20 +16,3 @@ $('#send').click(function() {
     $('#emailForm').submit( function(){ return false;})
 
 });
-
-
-
-//function mysql_query(query, args=null){
-//    var json=null;
-//    
-//    $.ajax({
-//        type: "POST",
-//        async: false,
-//        url: "loader.php",
-//        data: ( query : query, args : args ),
-//        success: function(response){
-//            json= JSON.parse(response);
-//        }
-//    });
-//    return json;
-//}    

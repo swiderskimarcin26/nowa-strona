@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+
+
+    <h1 class="title text-center"> July 2014 </h1>
+    <div class="calendar" data-toggle="calendar">
+        {{ vievPrepare | raw }}
+
+    </div>
+    <p class="text-center">No this is not a working calendar. It is purely for design. You are more than welcome to make it work, I sure am!</p>
+
+    <script src="assets/callendar.js"></script>
+
+{% endblock %}

@@ -15,7 +15,7 @@ use App\Service\Parameters\InscriptionParametersService;
 class CacheService
 {
     function cacheService($name,$inscriptionTitle,$inscriptionSubTitle=""){
-
+        $subtitle="";
         //wartości typu string, są przetwarzane na nazwy zmiennych
         if(!empty($inscriptionSubTitle)){
             $subtitle=$inscriptionSubTitle;
